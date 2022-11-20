@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FAQ Accordion Card</title>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <figure id="illustration">
+        <picture>
+          <source
+            media="(min-width: 376px)"
+            srcset="./images/illustration-woman-online-desktop.svg"
+          />
+          <img
+            src="images/illustration-woman-online-mobile.svg"
+            role="presentation"
+            class="woman-pic"
+          />
+        </picture>
+
+        <picture>
+          <source
+            media="(min-width: 376px)"
+            srcset="./images/bg-pattern-desktop.svg"
+          />
+          <img
+            src="./images/bg-pattern-mobile.svg"
+            role="presentation"
+            class="bg-pattern"
+          />
+        </picture>
+      </figure>
+      <section id="faqs">
+        <h1 class="section-title">FAQ</h1>
+
+        <details class="faq-details">
+          <summary class="faq-summary">
+            <h2 class="faq-question">How many team members can I invite?</h2>
+            <img src="images/icon-arrow-down.svg" alt="arrow icon" />
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Every plan includes unlimited organization members, so feel free
+              to invite everyone you want.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-details">
+          <summary class="faq-summary">
+            <h2 class="faq-question">What is the maximum file upload size?</h2>
+            <img src="images/icon-arrow-down.svg" alt="arrow icon" />
+          </summary>
+          <div class="faq-answer">
+            <p>
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-details">
+          <summary class="faq-summary">
+            <h2 class="faq-question">How do I reset my password?</h2>
+            <img src="images/icon-arrow-down.svg" alt="arrow icon" />
+          </summary>
+          <div class="faq-answer">
+            <ol>
+              <li>
+                Open your <a href="#">Google Account</a>. You might need to sign
+                in.
+              </li>
+              <li>
+                Under "Security," select <strong>Signing in to Google</strong>.
+              </li>
+              <li>
+                Choose <strong>Password</strong>. You might need to sign in
+                again.
+              </li>
+              <li>
+                Enter your new password, then select
+                <strong>Change Password</strong>.
+              </li>
+            </ol>
+          </div>
+        </details>
+
+        <details class="faq-details">
+          <summary class="faq-summary">
+            <h2 class="faq-question">Can I cancel my subscription?</h2>
+            <img src="images/icon-arrow-down.svg" alt="arrow icon" />
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Definitely! We provide easy account management through the
+              Settings page. Click on the Billing tab, and you'll be able to
+              manage your subscription without a problem.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-details">
+          <summary class="faq-summary">
+            <h2 class="faq-question">How do I delete my account?</h2>
+            <img src="images/icon-arrow-down.svg" alt="arrow icon" />
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Go to Settings > Account > Delete Account. Be aware that clicking
+              "Delete Account" will delete all your data, including associated
+              data, like solutions, comments, etc., and cannot be undone.
+            </p>
+          </div>
+        </details>
+      </section>
+    </main>
+  </body>
+</html>
