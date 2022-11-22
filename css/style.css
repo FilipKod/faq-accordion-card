@@ -28,20 +28,23 @@ picture {
 }
 
 main {
-  margin-top: 150px;
+  margin: 150px auto 0;
   background-color: #fff;
   padding: 132px 1.5rem 3rem;
+  width: 100%;
+  max-width: 920px;
   position: relative;
   border-radius: 23px;
   box-shadow: 0 50px 50px -20px rgba(53, 18, 122, 0.4972);
 }
-
-.section-title {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 0 0 1.875rem;
+@media screen and (min-width: 820px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: hidden;
+    padding: 0;
+  }
 }
 
 @media print {
@@ -73,6 +76,13 @@ main {
   background-position: center;
 }
 
+#faqs .section-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 1.875rem;
+}
 #faqs .faq-details {
   border-bottom: 1px solid #e8e8ea;
 }
@@ -118,14 +128,53 @@ main {
 #faqs .faq-answer ol {
   margin: 0.75rem 0 1rem;
 }
+@media screen and (min-width: 820px) {
+  #faqs {
+    flex: 1 0 50%;
+    padding: 4rem 5.9rem 5.2rem 1rem;
+  }
+  #faqs .section-title {
+    text-align: left;
+  }
+  #faqs .faq-details .faq-question {
+    font-size: 0.875rem;
+  }
+}
 
 #illustration {
   position: absolute;
-  top: -108px;
+  top: 0;
   left: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  width: 100%;
+}
+#illustration img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: transform 0.3s ease-in-out;
+}
+#illustration img.woman-pic {
+  top: -108px;
+}
+@media screen and (min-width: 820px) {
+  #illustration {
+    position: relative;
+    flex: 1 0 50%;
+    left: -84px;
+  }
+  #illustration img {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  #illustration img.woman-pic {
+    top: 50%;
+  }
+  #illustration img.bg-pattern {
+    left: initial;
+    right: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
