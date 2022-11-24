@@ -9,10 +9,9 @@ main {
   box-shadow: 0 50px 50px -20px rgba(53, 18, 122, 0.4972);
 
   @media screen and (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: 388px 445px;
+    justify-content: space-between;
     padding: 0;
   }
 }
