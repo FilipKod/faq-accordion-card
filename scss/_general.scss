@@ -11,7 +11,7 @@ html {
 
 body {
   min-height: 100%;
-  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background: linear-gradient($gradient);
   font-family: "Kumbh Sans", sans-serif;
   font-size: 100%;
   padding: 2.5rem 1.5rem;
@@ -25,4 +25,9 @@ figure {
 
 picture {
   display: inline-block;
+}
+
+ol,
+ul {
+  padding-left: 1.5rem;
 }

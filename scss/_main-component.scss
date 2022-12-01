@@ -1,12 +1,12 @@
 main {
   margin: 150px auto 0;
-  background-color: #fff;
+  background-color: $white-color;
   padding: 132px 1.5rem 3rem;
   width: 100%;
   max-width: 920px;
   position: relative;
   border-radius: 23px;
-  box-shadow: 0 50px 50px -20px rgba(53, 18, 122, 0.4972);
+  box-shadow: 0 50px 50px -20px $shadow-color;
 
   @media screen and (min-width: $desktop-width) {
     display: grid;

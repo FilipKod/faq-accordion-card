@@ -4,20 +4,27 @@
   left: 0;
   width: 100%;
 
-  // &:hover .woman-pic {
-  //   transform: translate(-50%, 10px);
-  // }
+  &:active .woman-pic {
+    transform: translate(-50%, 10px);
+  }
 
-  // &:hover .bg-pattern {
-  //   transform: translate(-50%, -10px);
-  // }
+  &:active .bg-pattern {
+    transform: translate(-50%, -10px);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    &:active .woman-pic,
+    &:active .bg-pattern {
+      transform: none;
+    }
+  }
 
   img {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.15s ease-in-out;
 
     &.woman-pic {
       top: -108px;

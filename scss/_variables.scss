@@ -1,1 +1,15 @@
-$desktop-width: 820px;
+// Sizes
+$desktop-width: 880px;
+
+// Colors
+$white-color: #ffffff;
+$bright-gray-color: #e8e8ea;
+$shadow-color: rgba(53, 18, 122, 0.4972);
+$independence-color: #4b4c5f;
+$coral-color: #f47b56;
+$gray-color: #787887;
+$rich-lilac-color: hsl(273, 75%, 66%);
+$medium-slate-blue-color: hsl(240, 73%, 65%);
+
+// Gradient
+$gradient: $rich-lilac-color, $medium-slate-blue-color;
